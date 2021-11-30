@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <h1>本間大瑚のWEBサイト!!</h1>
+</body>
+<style>
+h1{
+    front-size:50px;
+    text-align: center;
+    color:rgb(245, 155, 122);
+    text-shadow: 5px 10px 10px rgb(21, 116, 29)
+}
+body{
+    background-color: rgb(220, 230, 233);
+}
+</style>
+<body>
+    <header>
+        <div class="menu-bar">
+        <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i>ホーム</li>
+        <li><a href="index2.html"><i class="fas fa-photo-video"></i>ギャラリー</a></li>
+        <li><a href="#">私について</a>
+            <ul>
+               <li><a href="index3.html"> <i class="fas fa-smile-wink"></i>趣味</a></li>
+               <li><a href="index6.html"> <i class="fas fa-book"></i>好きな本</a></li>
+               <li><a href="index5.html"> <i class="fas fa-car"></i>アクセス</a></li>
+            </ul>
+         </li>
+         <li><a href="index4.html"><i class="far fa-meh"></i>あなたについて</a></li>
+        </ul>
+        </div>
+    </header>
+</body>
+
+<style>
+    *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-image: url(images/background.jpg);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        <style>ul{
+    float: right;
+    list-style: none;
+    font-size: 20px;
+ }
+ul li{
+    display: inline-block;
+    text-align: center;
+    width: 250;
+ }
+ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 50px;
+}</style>
+
+<style>ul li a:hover{
+    backgroundcolor: rgb(81, 146, 123);
+    color: rgb(255, 252, 71);
+    border-radius: 3px;}
+ul li ul li{
+    display: none;
+    width: 210;}
+ul li:hover ul li{
+    display: block;}
+</style>
+
+
+<div id="outside">
+    <form>
+      <h1>Friend Form</h1>
+      <p><b>Note:</b> あなたのことを教えてね！</p>  
+      <!-- ------------------Personal Details---------------------------- -->
+      <fieldset>   
+        <legend>Personal Details</legend>    
+        <div>
+          <label>名前:</label>
+          <input type="text" required placeholder="名前">   </div>
+        <div>
+          <label>住所:</label>
+          <input type="Address"placeholder="住所">   </div>
+        <div>
+          <label>Email:</label>
+          <input type="email" required placeholder="メール">   </div>
+        <div>
+          <label>趣味:</label>
+          <input type="text" required placeholder="趣味">  </div>
+
+        <!-- ------------------Radio Buttons-------------------------------- -->
+        <div>
+          <label>性別</label>
+          <p>
+            <input type="radio" name="gender" checked> 男<br>
+            <input type="radio" name="gender"> 女<br>
+            <input type="radio" name="gender"> 他
+          </p>
+        </div>
+        <label>DOB:</label>
+        <input type="date">  
+      </fieldset>
+      <!-- ------------------Checkboxes-------------------------------- -->
+      <fieldset>
+        <label for="Gender">興味のあることをチェックしてね！（僕の趣味です笑）</label>
+        <p>
+          <input type="checkbox">アクアリウム<br>
+          <input type="checkbox"> バイク<br>
+          <input type="checkbox"> ゲーム<br>
+          <input type="checkbox" checked> ドライブ<br>
+          <input type="checkbox" checked> 釣り<br>
+          <input type="checkbox" checked> キャンプ<br>
+        </p>
+      </fieldset>  
+      <!-- -----------------Dropdown menus--------------------------------- -->  
+      <fieldset>
+        <div>
+          <label>学年:</label>
+          <select>
+            <option>一年生</option>
+            <option>二年生</option>
+            <option>三年生</option>
+            <option>四年生</option>
+          </select>
+          <label>何してる人？:</label>
+          <select>
+            <option>大学生</option>
+            <option>高校生</option>
+            <option>中学生</option>
+            <option>その他</option>
+          </select>
+        </div>
+      </fieldset>
+      <!-- --------------------Text Areas------------------------------ -->
+      <fieldset>
+        <legend>Essay Section</legend>
+        <div>
+          <label></label>
+          <p> あなたについて５０字以上で教えて下さい！</p>
+          <textarea name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   
+        </div>
+        <p>面白い画像があったら送ってみて！<br>
+          <input type="file" accept="image/png, image/jpeg">
+          <button>Attach Files</button></p>
+      </fieldset>
+      <div>
+      <button type="submit">Send your application</button>  
+    　</div>
+    </form>
+</html>
