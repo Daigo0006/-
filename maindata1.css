@@ -1,0 +1,10 @@
+*
+h1{
+    front-size:50px;
+    text-align: center;
+    color:rgb(245, 155, 122);
+    text-shadow: 5px 10px 10px rgb(33, 179, 45)
+}
+body{
+    background-color: rgb(220, 230, 233);
+}
